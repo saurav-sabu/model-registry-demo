@@ -17,7 +17,7 @@ rf = RandomForestClassifier()
 
 param_grid = {
     "n_estimators":[5,50,100,150,200],
-    "max_depth":[None,10,20,30,40]
+    "max_depth":[None,3,6,7]
 }
 
 grid_search = GridSearchCV(estimator=rf,param_grid=param_grid,cv=5,n_jobs=-1,verbose = 2)
